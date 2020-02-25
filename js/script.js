@@ -1,18 +1,18 @@
-var hotel = {
+var car = {
     // Object properties
-    name: 'Clayton',
-    rooms: 110,
-    booked: 25,
-    gym: true,
-    roomTypes: ['double', 'twin', 'suite', 'king'],
+    brand: 'BMW',
+    stock: 5,
+    booked: 2,
+    automatic: true,
+    modelTypes: ['Gran Couple', 'Gran Turism', 'Alpina'],
     checkAvailablity: function() {
-        return this.rooms - this.booked;
+        return this.stock - this.booked;
     }
 };
 
-var elName = document.getElementById('hotelName');
-elName.textContent = hotel.name;
+var elBrand = document.getElementById('car');
+elBrand.textContent = car.brand;
 
-var elRooms = document.getElementById('rooms');
-elRooms.textContent = hotel.checkAvailablity();
+var elStock = document.getElementById('stock');
+elStock.textContent = car.checkAvailablity();
 
